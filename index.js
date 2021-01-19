@@ -17,7 +17,7 @@ Do the following:
 
    HINT: no function required
 */
-
+const votingAge = 18
 
 
 /*
