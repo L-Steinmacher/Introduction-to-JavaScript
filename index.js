@@ -166,11 +166,40 @@ Use the game function below to do the following:
   
   HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
-
+let paper = .33333;
+let rock = .66666;
+let scissors = 1;
+let computer = Math.random()
 function game(user, computer){
-    /*add your code here*/
+    if (computer <= .33333){
+      if(user === paper){
+        return "it's a tie";
+      }else if(user === rock){
+        return "you lose!";
+      }else if(user === scissors){
+        return "you win!";
+      }
+    }else if (computer > .33333 && computer < 0.66666){
+      if (user===paper){
+        return "you win!";
+      }else if (user ===rock){
+        return "it's a tie";
+      }else if(user===scissors){
+        return "you lose!";
+      }
+    }else if(computer >=.666666){
+      if(user===paper){
+        return "you lose!";
+      }else if( user === rock){
+        return "you win!"
+      }else if(user === scissors){
+        return "it's a tie!"
+      }
+    }else{
+      return'enter paper, rock, or scissors'
+    }
 }
-  
+console.log(game(paper,computer));
   
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
