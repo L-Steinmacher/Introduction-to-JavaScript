@@ -299,10 +299,18 @@ Using the vowelCounter function below do the following:
 */
 
 
-function vowelCounter(/*add your code here*/) {
-    /*add your code here*/
+function vowelCounter(string) {
+    let vowels = 'aeiouAEIOU'
+    let letters = [];
+    let count = 0; 
+    letters = string.slice('')
+    for (i = 0; i < letters.length; i++){
+      if(letters[i].includes(vowels)){
+        count++;
+      }
+    }return count;
 }
-
+console.log(vowelCounter('have yourself a merry lIttle christmas'))
 
 
 /*🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑*/
